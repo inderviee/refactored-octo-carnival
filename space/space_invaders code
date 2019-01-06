@@ -1,0 +1,11 @@
+from BasicGame import *
+from pygame import *
+from Ball import *
+from math import *
+from random import uniform
+
+class space_invaders_game(BasicGame):
+    def _init_(self):
+        self.w, self.h = 800 , 600
+        self.bkg_color = (255,255,255)
+        BasicGame:_init_(self, size(self.w, self.h), fill(self.bkg_color))
